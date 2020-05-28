@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+  <link rel = "stylesheet" href = "style.css">
+</head>
+<div class = "container">
+  <header class = "header">
+    <h1 id = "title">Air Force 1 Survey Form</h1>
+    <p id = "description">Cast your vote for what the next AF1's should be.<p>
+  </header>
+  <form id = "survey-form" action="https://www.freecodecamp.com/email-submit">
+    <h2 class="basic-label">Basic Info</h2>
+    <div class = "form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class = "form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class = "form-group">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Enter your age"
+      />
+    </div>
+    <h2 class="basic-label">AF1 Questions</h2>
+    <div class="form-group">
+      <p class="special">Have you owned AF1's in the past?</p>
+      <label class="small">
+        <input
+          name="owned"
+          value="yes"
+          type="radio"
+          class="input-radio"
+        />Yes</label
+      >
+      <label class="small">
+        <input
+          name="owned"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+    <div class="form-group">
+      <p class="special">What size are you?</p>
+      <select id="dropdown" name="size" class="form-control" required>
+        <option disabled selected value>Select size</option>
+        <option value="small">Smaller</option>
+        <option value="7">7M/8.5W</option>
+        <option value="8">8M/9.5W</option>
+        <option value="9">9M/10.5W</option>
+        <option value="10">10M/11.5W</option>
+        <option value="11">11M/12.5W</option>
+        <option value="12">12M/13.5W</option>
+        <option value="big">Bigger</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p class="special">Who would you like us to collaborate with? (Preferred Max: 2 People)</p>
+      <label class="small">
+        <input
+          name="prefer"
+          value="virgil-abloh"
+          type="checkbox"
+          class="input-checkbox"
+        />Virgil Abloh</label
+      >
+      <label class="small">
+        <input
+          name="prefer"
+          value="travis-scott"
+          type="checkbox"
+          class="input-checkbox"
+        />Travis Scott</label
+      >
+      <label class="small">
+        <input
+          name="prefer"
+          value="jerry-lorenzo"
+          type="checkbox"
+          class="input-checkbox"
+        />Jerry Lorenzo</label
+      >
+      <label class="small">
+        <input
+          name="prefer"
+          value="james-jebbia"
+          type="checkbox"
+          class="input-checkbox"
+        />James Jebbia</label
+      >
+    </div>
+    <div class="form-group">
+      <p class="special">Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Vote
+      </button>
+    </div>
+  </form>
+  <footer><h3>Nike</h3></footer>
+</div>
